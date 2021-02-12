@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Create event</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container formCreateEvent">
+        <div class="errorBlock">error</div>
+        <div>
+            <form>
+                <div class="mb-4">
+                    <label for="inputName" class="form-label">Name of the event:</label>
+                    <input class="inputName formField form-control" type="text" placeholder="Enter name of the event">
+                </div>
+                <div class="mb-4">
+                    <label for="selectMembers" class="form-label">Participants (hold "Ctrl" to select multiple
+                        participants):</label>
+                    <select class="selectMembers formField form-select" multiple size="3">
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="selectDay" class="form-label">Day:</label>
+                    <select class="selectDay formField form-select">
+                        <option value="">Select day</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="selectTime" class="form-label">Time:</label>
+                    <select class="selectTime formField form-select">
+                        <option value="">Select time</option>
+                    </select>
+                </div>
+                <div class="formButtons d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button id="buttonCancelEvent" class="btn btn-secondary me-md-2" type="button">Cancel</button>
+                    <button id="buttonCreateEvent" class="btn btn-primary" type="button">Create</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
